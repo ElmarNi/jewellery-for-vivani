@@ -344,10 +344,6 @@ header .logo img {
   }
 }
 @media (max-width: 768px) {
-  #slider {
-    margin-top: 68px;
-  }
-
   #slider .custom-item .content p {
     font-size: 15px;
   }
@@ -461,14 +457,14 @@ header .logo img {
   color: #888888;
 }
 #whyChooseUs .item .left i.second {
-  top: 130%;
+  top: 200%;
 }
 #whyChooseUs .item:hover i.second {
   color: black;
   top: 3px;
 }
 #whyChooseUs .item:hover i.first {
-  top: -110%;
+  top: -200%;
 }
 #whyChooseUs .item .right .heading {
   color: black;
@@ -482,4 +478,12 @@ header .logo img {
 #whyChooseUs .col-md-4:nth-child(2) {
   border-left: 1px solid #88888863;
   border-right: 1px solid #88888863;
+}
+
+@media (max-width: 768px) {
+  #whyChooseUs .col-md-4:nth-child(2) {
+    border-color: transparent;
+    border-top: 1px solid #88888863;
+    border-bottom: 1px solid #88888863;
+  }
 }
