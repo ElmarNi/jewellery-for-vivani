@@ -65,7 +65,6 @@ header {
   position: relative;
   padding: 10px 0;
   opacity: .6;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
   font-weight: 500;
   font-size: 17px;
@@ -284,7 +283,7 @@ header .logo img {
   height: 40px;
   display: inline-block;
   font-size: 25px;
-  line-height: 39px;
+  line-height: 37px;
   background-color: #ead2ac;
   border: 2px solid #ead2ac;
   -webkit-transition: all .3s ease;
@@ -387,14 +386,11 @@ header .logo img {
 #popular-products .row.content {
   overflow: hidden;
   border-radius: 6px;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all .3s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   transition: all .3s ease;
 }
 #popular-products .row.content img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   max-height: 500px;
 }
 #popular-products .row.content .right-side {
@@ -446,4 +442,44 @@ header .logo img {
     font-size: 27px;
     margin-bottom: 30px;
   }
+}
+#whyChooseUs .item {
+  overflow: hidden;
+  display: flex;
+}
+#whyChooseUs .item .left {
+  position: relative;
+  width: 38px;
+  height: 34px;
+}
+#whyChooseUs .item .left i {
+  transition: all .2s ease;
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  color: #888888;
+}
+#whyChooseUs .item .left i.second {
+  top: 130%;
+}
+#whyChooseUs .item:hover i.second {
+  color: black;
+  top: 3px;
+}
+#whyChooseUs .item:hover i.first {
+  top: -110%;
+}
+#whyChooseUs .item .right .heading {
+  color: black;
+  font-weight: 500;
+}
+#whyChooseUs .item .right .content {
+  color: #888888;
+  font-weight: 400;
+  font-size: 14px;
+}
+#whyChooseUs .col-md-4:nth-child(2) {
+  border-left: 1px solid #88888863;
+  border-right: 1px solid #88888863;
 }
