@@ -55,7 +55,7 @@ header{
 #large-screens .menu li {
   margin-left: 30px;
 }
-#large-screens .menu li a, #popular-products .categories ul li a {
+#large-screens .menu li a, #popular-products .categories ul li a, footer .menu ul li a {
   color: black;
   position: relative;
   padding: 10px 0;
@@ -67,7 +67,7 @@ header{
 #large-screens .menu li a.active, #popular-products .categories ul li a.active{
   opacity: 1;
 }
-#large-screens .menu li a::before, #popular-products .categories ul li a::before{
+#large-screens .menu li a::before, #popular-products .categories ul li a::before, footer .menu ul li a::before{
   content: '';
   position: absolute;
   left: 0;
@@ -78,7 +78,7 @@ header{
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
-#large-screens .menu li a:hover:not(.active)::before, #popular-products .categories ul li a:hover:not(.active)::before{
+#large-screens .menu li a:hover:not(.active)::before, #popular-products .categories ul li a:hover:not(.active)::before, footer .menu ul li a:hover:not(.active)::before{
   -webkit-animation: menuItems .3s;
           animation: menuItems .3s;
   width: 100%;
@@ -341,3 +341,4 @@ header .logo img{
 }
 @import 'popular-products';
 @import 'whychooseus';
+@import 'footer';

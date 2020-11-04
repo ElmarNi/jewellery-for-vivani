@@ -60,7 +60,7 @@ header {
   margin-left: 30px;
 }
 
-#large-screens .menu li a, #popular-products .categories ul li a {
+#large-screens .menu li a, #popular-products .categories ul li a, footer .menu ul li a {
   color: black;
   position: relative;
   padding: 10px 0;
@@ -74,7 +74,7 @@ header {
   opacity: 1;
 }
 
-#large-screens .menu li a::before, #popular-products .categories ul li a::before {
+#large-screens .menu li a::before, #popular-products .categories ul li a::before, footer .menu ul li a::before {
   content: '';
   position: absolute;
   left: 0;
@@ -86,7 +86,7 @@ header {
   transition: all .3s ease;
 }
 
-#large-screens .menu li a:hover:not(.active)::before, #popular-products .categories ul li a:hover:not(.active)::before {
+#large-screens .menu li a:hover:not(.active)::before, #popular-products .categories ul li a:hover:not(.active)::before, footer .menu ul li a:hover:not(.active)::before {
   -webkit-animation: menuItems .3s;
   animation: menuItems .3s;
   width: 100%;
@@ -485,5 +485,130 @@ header .logo img {
     border-color: transparent;
     border-top: 1px solid #88888863;
     border-bottom: 1px solid #88888863;
+  }
+}
+footer {
+  padding: 60px 0;
+  background-image: url(../img/footer_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+footer .logo a {
+  color: black;
+  display: flex;
+  align-items: center;
+}
+footer .logo a img {
+  width: 70px;
+  margin-left: 2px;
+}
+footer .logo a p {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  margin-left: 20px;
+}
+footer .logo p {
+  color: #666;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: justify;
+  width: 90%;
+}
+footer .social-icons {
+  border-bottom: 1px solid rgba(102, 102, 102, 0.1);
+}
+footer .social-icons h1 {
+  font-size: 32px;
+  text-align: center;
+}
+footer .social-icons ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .social-icons ul li a {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  color: white;
+  transition: all .3s ease;
+}
+footer .social-icons ul li a i {
+  font-size: 27px;
+}
+footer .social-icons ul li:first-child a {
+  background: #3b5999;
+}
+footer .social-icons ul li:last-child a {
+  background: #00aced;
+}
+footer .social-icons ul li:nth-child(2) a {
+  background: #cc2366;
+}
+footer .social-icons ul li:hover a {
+  background: white;
+}
+footer .social-icons ul li:hover:first-child a {
+  color: #3b5999;
+}
+footer .social-icons ul li:hover:last-child a {
+  color: #00aced;
+}
+footer .social-icons ul li:hover:nth-child(2) a {
+  color: #cc2366;
+}
+footer .item {
+  border-left: 1px solid rgba(102, 102, 102, 0.1);
+}
+footer .menu ul li {
+  margin: 5px 0;
+}
+footer .menu ul li a {
+  color: #666666;
+  display: inline-block;
+  padding: 4px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+footer .menu ul li a:hover {
+  color: black;
+}
+footer .adress ul li {
+  color: #666666;
+  margin: 10px 0;
+}
+footer .adress ul li i {
+  margin-right: 5px;
+  color: black;
+}
+footer .adress ul li a {
+  color: #666666;
+  border-bottom: 1px solid #666666;
+  transition: all .3s ease;
+}
+footer .adress ul li a:hover {
+  border-color: transparent;
+}
+
+@media (max-width: 768px) {
+  footer .item {
+    border-left-color: transparent;
+    border-top: 1px solid rgba(102, 102, 102, 0.1);
+  }
+
+  footer .menu {
+    border-bottom: 1px solid rgba(102, 102, 102, 0.1);
+  }
+  footer .menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }
