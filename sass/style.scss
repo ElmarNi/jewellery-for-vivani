@@ -216,7 +216,7 @@ header .logo img{
   font-size: 50px;
   margin-bottom: 20px;
 }
-#slider .custom-item .content a, #popular-products .row.content .right-side .info a {
+.mainBtn {
   color: white;
   border: 2px solid #ead2ac;
   background-color: #ead2ac;
@@ -226,7 +226,7 @@ header .logo img{
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
-#slider .custom-item .content a:hover, #popular-products .row.content .right-side .info a:hover {
+.mainBtn:hover {
   background-color: white;
   color: black;
 }
@@ -341,4 +341,6 @@ header .logo img{
 }
 @import 'popular-products';
 @import 'whychooseus';
+@import 'trending';
 @import 'footer';
+@import 'breadcrumb';
