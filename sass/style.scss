@@ -265,7 +265,7 @@ header .logo img{
 #slider button:focus {
   outline: none;
 }
-#slider .owl-dots {
+#slider .owl-dots, #clients .owl-dots {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,7 +277,7 @@ header .logo img{
   position: absolute;
   width: 100%;
 }
-#slider .owl-dots span {
+#slider .owl-dots span, #clients .owl-dots span {
   width: 12px;
   height: 12px;
   display: inline-block;
@@ -285,7 +285,7 @@ header .logo img{
   margin: 0 5px;
   
 }
-#slider .owl-dots .owl-dot.active span {
+#slider .owl-dots .owl-dot.active span, #clients .owl-dots .owl-dot.active span {
   background-color: black;
 }
 
@@ -344,3 +344,5 @@ header .logo img{
 @import 'trending';
 @import 'footer';
 @import 'breadcrumb';
+@import 'clients';
+@import 'contact';

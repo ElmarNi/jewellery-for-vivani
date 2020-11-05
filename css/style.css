@@ -65,6 +65,7 @@ header {
   position: relative;
   padding: 10px 0;
   opacity: .6;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
   font-weight: 500;
   font-size: 17px;
@@ -298,7 +299,7 @@ header .logo img {
   outline: none;
 }
 
-#slider .owl-dots {
+#slider .owl-dots, #clients .owl-dots {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,7 +312,7 @@ header .logo img {
   width: 100%;
 }
 
-#slider .owl-dots span {
+#slider .owl-dots span, #clients .owl-dots span {
   width: 12px;
   height: 12px;
   display: inline-block;
@@ -319,7 +320,7 @@ header .logo img {
   margin: 0 5px;
 }
 
-#slider .owl-dots .owl-dot.active span {
+#slider .owl-dots .owl-dot.active span, #clients .owl-dots .owl-dot.active span {
   background-color: black;
 }
 
@@ -382,11 +383,14 @@ header .logo img {
 #popular-products .row.content {
   overflow: hidden;
   border-radius: 6px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 #popular-products .row.content img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-height: 500px;
 }
 #popular-products .row.content .right-side {
@@ -444,6 +448,8 @@ header .logo img {
 }
 #whyChooseUs .item {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 #whyChooseUs .item .left {
@@ -452,6 +458,7 @@ header .logo img {
   height: 34px;
 }
 #whyChooseUs .item .left i {
+  -webkit-transition: all .2s ease;
   transition: all .2s ease;
   font-size: 30px;
   position: absolute;
@@ -500,8 +507,10 @@ header .logo img {
   width: 20%;
   height: 100%;
   background: rgba(255, 255, 255, 0.8);
-  transform: skew(-20deg);
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
   left: -20px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 #trending .banner:hover::before {
@@ -518,11 +527,13 @@ header .logo img {
 #trending .item .image-wrapper img {
   height: 166px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #trending .item .image-wrapper .discount, #trending .item .image-wrapper .isNew {
   position: absolute;
   top: 10px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
   font-size: 13px;
   padding: 3px 12px;
@@ -534,7 +545,8 @@ header .logo img {
 }
 #trending .item .image-wrapper .discount {
   right: -70px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   color: black;
   background-color: white;
 }
@@ -545,6 +557,7 @@ header .logo img {
   right: 20px;
   text-align: center;
   font-size: 14px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
   padding: 7px;
 }
@@ -560,6 +573,7 @@ header .logo img {
 #trending .item .content a h1 {
   font-size: 18px;
   color: black;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
   font-weight: 300;
 }
@@ -608,8 +622,12 @@ footer {
 }
 footer .logo a {
   color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 footer .logo a img {
   width: 70px;
@@ -638,18 +656,31 @@ footer .social-icons h1 {
   text-align: center;
 }
 footer .social-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 footer .social-icons ul li a {
   height: 50px;
   width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 6px;
   color: white;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 footer .social-icons ul li a i {
@@ -703,6 +734,7 @@ footer .adress ul li i {
 footer .adress ul li a {
   color: #666666;
   border-bottom: 1px solid #666666;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 footer .adress ul li a:hover {
@@ -719,9 +751,26 @@ footer .adress ul li a:hover {
     border-bottom: 1px solid rgba(102, 102, 102, 0.1);
   }
   footer .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  footer .social-icons {
+    margin: 0 -15px;
+  }
+
+  footer .social-icons h1 {
+    font-size: 24px;
+  }
+
+  footer .logo p {
+    width: 100%;
   }
 }
 #breadcrumb {
@@ -737,9 +786,15 @@ footer .adress ul li a:hover {
 #breadcrumb p {
   margin: 0;
   font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #01000094;
   font-weight: 500;
 }
@@ -756,11 +811,122 @@ footer .adress ul li a:hover {
   height: 2px;
   background: black;
   bottom: 2px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 #breadcrumb p a:hover::before {
-  right: 100%;
+  right: 102%;
 }
 #breadcrumb p i {
   margin: 0 10px;
+}
+
+#clients .owl-item {
+  padding: 20px;
+}
+#clients .item {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+#clients .item .image-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#clients .item .image-wrapper img {
+  width: 100px;
+  border-radius: 100%;
+  display: inline-block;
+}
+#clients .item .heading {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#clients .item .content {
+  font-size: 14px;
+  font-style: italic;
+  color: #aaaaaa;
+  text-align: center;
+}
+#clients .owl-dots {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+#clients .owl-carousel button.owl-dot {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  #clients .item {
+    padding: 30px;
+  }
+}
+#contact .image-wrapper {
+  position: relative;
+}
+#contact .image-wrapper img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#contact .image-wrapper::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border: 4px solid rgba(200, 200, 200, 0.3);
+  right: -20px;
+  top: 20px;
+  z-index: -1;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+#contact .image-wrapper:hover::before {
+  border-color: #ead2ac;
+}
+#contact .main-heading h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#contact .main-heading p {
+  margin: 0;
+  color: #666666;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+#contact .adress, #contact .phone, #contact .email, #contact .hours {
+  margin-top: 20px;
+}
+#contact .adress h1, #contact .phone h1, #contact .email h1, #contact .hours h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#contact .adress p, #contact .adress a, #contact .phone p, #contact .phone a, #contact .email p, #contact .email a, #contact .hours p, #contact .hours a {
+  color: #666666;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  #contact .image-wrapper::before {
+    content: none;
+  }
+
+  #contact .adress p, #contact .adress a, #contact .phone p, #contact .phone a, #contact .email p, #contact .email a, #contact .hours p, #contact .hours a {
+    font-size: 12px;
+  }
+
+  #contact .main-heading h1 {
+    font-size: 32px;
+  }
+
+  #contact .main-heading p {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+
+  #contact .adress h1, #contact .phone h1, #contact .email h1, #contact .hours h1 {
+    margin-bottom: 2px;
+  }
 }
