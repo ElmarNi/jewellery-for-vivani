@@ -245,19 +245,19 @@ header .logo img {
 }
 
 .mainBtn {
-  color: white;
-  border: 2px solid #ead2ac;
-  background-color: #ead2ac;
-  padding: 10px 30px;
-  font-size: 18px;
-  font-weight: 500;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  color: white !important;
+  border: 2px solid #ead2ac !important;
+  background-color: #ead2ac !important;
+  padding: 10px 30px !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  -webkit-transition: all .3s ease !important;
+  transition: all .3s ease !important;
 }
 
 .mainBtn:hover {
-  background-color: white;
-  color: black;
+  background-color: white !important;
+  color: black !important;
 }
 
 #slider .owl-nav {
@@ -619,6 +619,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  padding-bottom: 0;
 }
 footer .logo a {
   color: black;
@@ -773,6 +774,12 @@ footer .adress ul li a:hover {
     width: 100%;
   }
 }
+footer .copy {
+  padding: 20px 0;
+  border-top: 1px solid rgba(102, 102, 102, 0.1);
+  color: #666;
+}
+
 #breadcrumb {
   background-image: url(../img/breadcurmb-img.png);
   height: 200px;
@@ -907,6 +914,37 @@ footer .adress ul li a:hover {
   color: #666666;
   font-size: 15px;
 }
+#contact .map {
+  margin: 100px 0;
+  margin-bottom: 60px;
+}
+#contact .form-cont h1 {
+  text-align: center;
+}
+#contact .form-cont input, #contact .form-cont textarea {
+  width: 100%;
+  font-size: 15px;
+  color: #555;
+  padding: 0 12px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #e9e9e9;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+#contact .form-cont input:hover, #contact .form-cont input:focus, #contact .form-cont textarea:hover, #contact .form-cont textarea:focus {
+  border-color: #ead2ac;
+  outline: transparent;
+}
+#contact .form-cont textarea {
+  padding-top: 10px;
+}
+#contact .form-cont input {
+  height: 45px;
+}
+#contact .form-cont .mainBtn {
+  width: 180px;
+}
 
 @media (max-width: 768px) {
   #contact .image-wrapper::before {
@@ -928,5 +966,9 @@ footer .adress ul li a:hover {
 
   #contact .adress h1, #contact .phone h1, #contact .email h1, #contact .hours h1 {
     margin-bottom: 2px;
+  }
+
+  #contact .map {
+    margin-top: 40px;
   }
 }

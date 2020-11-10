@@ -45,6 +45,38 @@
             font-size: 15px;
         }
     }
+    .map{
+        margin: 100px 0;
+        margin-bottom: 60px;
+    }
+    .form-cont{
+        h1{
+            text-align: center;
+        }
+        input, textarea{
+            width: 100%;
+            font-size: 15px;
+            color: #555;
+            padding: 0 12px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            border: 1px solid #e9e9e9;
+            transition: all .3s ease;
+            &:hover, &:focus{
+                border-color: #ead2ac;
+                outline: transparent;
+            }
+        }
+        textarea{
+            padding-top: 10px;
+        }
+        input{
+            height: 45px;
+        }
+        .mainBtn{
+            width: 180px;
+        }
+    }
 }
 @media (max-width: 768px){
     #contact .image-wrapper::before{
@@ -62,5 +94,8 @@
     }
     #contact .adress h1, #contact .phone h1, #contact .email h1, #contact .hours h1{
         margin-bottom: 2px;
+    }
+    #contact .map{
+        margin-top: 40px;
     }
 }

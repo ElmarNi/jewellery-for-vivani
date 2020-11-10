@@ -4,6 +4,7 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    padding-bottom: 0;
     .logo{
         
         a{
@@ -156,4 +157,9 @@ footer{
     footer .logo p{
         width: 100%;
     }
+}
+footer .copy{
+    padding: 20px 0;
+    border-top: 1px solid rgba(102, 102, 102, 0.1);
+    color: #666;
 }

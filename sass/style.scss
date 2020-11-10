@@ -217,18 +217,18 @@ header .logo img{
   margin-bottom: 20px;
 }
 .mainBtn {
-  color: white;
-  border: 2px solid #ead2ac;
-  background-color: #ead2ac;
-  padding: 10px 30px;
-  font-size: 18px;
-  font-weight: 500;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  color: white !important;
+  border: 2px solid #ead2ac !important;
+  background-color: #ead2ac !important;
+  padding: 10px 30px !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  -webkit-transition: all .3s ease !important;
+  transition: all .3s ease !important;
 }
 .mainBtn:hover {
-  background-color: white;
-  color: black;
+  background-color: white !important;
+  color: black !important;
 }
 #slider .owl-nav {
   position: absolute;
